@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GISUBIZO - Bio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #e6e0d6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('software-developer-6521720_640.jpg') center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid rgb(58, 58, 58);
+            margin-bottom: -20px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            max-width: 500px;
+            margin: 0 auto 20px;
+            padding: 0 20px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 80px;
+        }
+
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 20px;
+            margin-top: -50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-button {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-button:hover {
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 40px 20px 20px;
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: -30px;
+            }
+
+            .nav-button {
+                width: 100px;
+                height: 100px;
+                font-size: 0.7rem;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+            .description {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                border-radius: 15px;
+            }
+
+            .hero {
+                height: 250px;
+                padding-top: 20px;
+            }
+
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+            }
+
+            .nav-buttons {
+                gap: 10px;
+            }
+
+            .nav-button {
+                width: 80px;
+                height: 80px;
+                font-size: 0.6rem;
+            }
+
+            .social-icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            .description {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hero">
+            <img src="images.jpeg" alt="Ursula Jones" class="profile-pic">
+            <h1 class="name">GISUBIZO</h1>
+            <p class="description">A passionate software developer specializing in creating innovative solutions with a focus on user-friendly websites.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Pinterest">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="nav-buttons">
+            <button class="nav-button">My Blog</button>
+            <button class="nav-button">My Website</button>
+            <button class="nav-button">Discounts</button>
+            <button class="nav-button">Contact</button>
+        </div>
+
+        <div class="copyright">
+            Copyright 2024
+        </div>
+    </div>
+</body>
+</html>
